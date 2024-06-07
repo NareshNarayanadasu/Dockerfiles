@@ -4,10 +4,10 @@ WORKDIR /app
 
 # Update package list and install Maven
 RUN apt-get update 
-RUN apt-get install -y maven
+RUN apt-get install maven -y
 
 # Clone the repository
-ADD https://github.com/devopshydclub/vprofile-project.git .
+RUN https://github.com/devopshydclub/vprofile-project.git 
 RUN ls
 
 # Change directory, checkout the 'docker' branch, and build the project

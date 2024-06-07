@@ -1,6 +1,5 @@
 # First Stage: Build Image
 FROM openjdk:11 AS BUILD_IMAGE
-WORKDIR /app
 
 # Update package list and install Maven
 RUN apt-get update  && apt-get install maven -y
